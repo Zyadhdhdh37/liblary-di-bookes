@@ -1,0 +1,508 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+header {
+padding: 20px;
+ text-align: center;
+ 
+}
+
+aside {
+ float: right;
+ width: 15%;
+ padding: 20px;
+}
+
+article {
+float: left;
+padding: 10px;
+width: 65%;
+}
+
+footer { 
+    float :right;
+padding: 50px; 
+text-align: center; 
+}
+ul{
+    display: flex;
+    list-style:none;
+    margin-top :0px;
+}
+li{
+margin: 0px 20px ;
+margin-right :0;
+}
+header .imge{
+
+    background-color: yellowgreen;
+}
+header .imge h1{
+
+    padding: 53px;
+    font-size: 50px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  a{
+
+    text-decoration: none;
+  }
+  /* statrt header */
+  .header{
+
+    background-color: rgb(76, 50, 205);
+    
+    background-image:url("/صور\ كتب/1675106192341.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+  }
+  .header .container{
+  
+  }
+  .header .container .imge{
+
+text-align: center;
+    
+  }
+  .header .container .imge img{
+
+    max-width: 100%;
+  }
+  .header .container h1{
+
+    padding: 30px;
+    color: white;
+  }
+  /* end header */
+
+  /* sart section */
+  
+  .secion .container{
+
+    padding-top: 20px ;
+    padding-bottom: 20px;
+  }
+  .secion .container ul{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+ 
+  .secion .container ul li{
+width: 31%;
+    padding: 10px;
+    font-size: 26px;
+    background: whitesmoke;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: 991px){
+
+    .secion .container ul li{
+
+      width: 45%;
+    }
+
+  }
+  @media(max-width:768px){
+  .secion .container ul li {
+width: 100%;
+      
+    }
+
+
+  }
+  .secion .container ul li a{
+
+    color: black;
+  }
+  /* end section */
+
+  .the-bart-bokes{
+
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+.the-bart-bokes .container .title{
+background: url("/صور\ كتب/1675106312833.jpg");
+    padding: 100px;
+
+    background-size: cover;
+        text-align: center;
+  }
+ 
+.the-bart-bokes .container .title h2{
+
+    transition: 1.10s;
+    
+      border: 1px solid black;
+      text-align: center;
+        width: 162px;
+        margin: 50px auto;
+        position: relative;
+        padding: 10px;
+    position: relative;
+    z-index: 0;
+    color: white;
+
+    
+    }
+.the-bart-bokes .container .title h2::after{
+content: "";
+position: absolute;
+left: 0;
+height: 20px;
+width: 20px;
+right: -30px;
+border-radius: 50%;
+    background-color: chartreuse;
+    top: 20px;
+    transition: 0.5s;
+    }
+.the-bart-bokes .container .title h2::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        left: -30px;
+        border-radius: 50%;
+            background-color: chartreuse;
+            top: 20px;
+            transition: 0.5s;
+        
+
+            }
+            .the-bart-bokes .container .title h2:hover::after{
+
+
+                top: 0;
+                height:100%;
+                width: 51%;
+                left: 0;
+                z-index: -1;
+                right: 0;
+                border-radius: 0;
+                transition: 0.3;
+            }
+            .the-bart-bokes .container .title h2:hover{
+
+                color:rgb(94, 18, 18);
+                transition: 0.5s;
+            }.the-bart-bokes .container .title h2:hover::before{
+
+
+                top: 0;
+                height:100%;
+                width: 50%;
+                left: 0;
+                z-index: -1;
+                
+                border-radius: 0;
+                background-color: chartreuse;
+    
+                transition: 0.3;
+            }
+.the-bart-bokes .container .boxnas{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.the-bart-bokes .container .boxnas li{
+    BACKGROUND: OLDLACE;
+    list-style: none;
+    font-size: 40px;
+    width: 30%;
+    padding: 15px;
+    MARGIN-TOP: 10PX;
+    color: black;
+    text-align: center;
+}
+@media (max-width: 991px) {
+  .the-bart-bokes .container .boxnas li {
+    width: 45%;
+  }
+}            
+
+@media(max-width:768px){
+  .the-bart-bokes .container .boxnas li {
+
+    width: 100%;
+  }
+
+}
+.the-bart-bokes .container .boxnas li a{
+    color: black;
+}
+
+    
+.book-s .container .titles  {
+
+
+    padding: 100px;
+    text-align: center;
+}
+.book-s .container .titles h2{
+
+
+    transition: 1.10s;
+    font-size: 35px;
+      border: 1px solid black;
+      text-align: center;
+        margin: 50px auto;
+        position: relative;
+        padding: 30px;
+    position: relative;   
+}
+.book-s .container .titles h2::after{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    right: -30px;
+    border-radius: 50%;
+        background-color: chartreuse;
+        top: 50px;
+        transition: 0.5s;
+
+}
+.book-s .container .titles h2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    left: -30px;
+    border-radius: 50%;
+        background-color: chartreuse;
+        top: 50px;
+        transition: 0.5s;
+    
+
+}
+.book-s .container .titles h2:hover::before{
+    top: 0;
+    height:100%;
+    width: 51%;
+    left: 0;
+    z-index: -1;
+    
+    border-radius: 0;
+    transition: 0.3;
+
+
+}
+
+.book-s .container .titles h2:hover::after{
+
+
+    top: 0;
+    height:100%;
+    width: 51%;
+    left: 0;
+    z-index: -1;
+    right: 0;
+    border-radius: 0;
+    transition: 0.3;
+}
+
+.book-s .container .h3{
+
+    
+}
+
+.fathrboks{
+
+display: flex;
+ justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fathrboks .parboks{
+
+width: 31%;
+
+}
+@media(max-width:797px){
+
+    .fathrboks .parboks{
+
+        flex-basis: 100%;
+    }
+
+}
+@media(max-width:1100px){
+
+    .fathrboks .parboks{
+
+        width: 47%;
+    }
+
+}
+
+.fathrboks .parboks .text{
+
+    padding: 30px;
+    
+    background: bisque;
+
+}
+
+.fathrboks .parboks img{
+
+    max-width: 100%;
+}
+.fathrboks .parboks .text p{
+
+    font-size: 20px;
+    padding: 20px;
+    background-color: aquamarine;
+    
+}
+/* end shpter */
+.scoris{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+
+  }
+  .scoris .container{
+
+    background-color: aquamarine;
+  }
+.scoris .container .link{
+
+position: relative;
+
+}
+.scoris .container .link .fab{
+   font-size: 50px;
+   font-weight: 100px;
+}
+.scoris .container .link a{
+  display: inline-block;
+    height: 39px;
+    background-color: #3bff0059;
+    /* position: absolute; */
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+/* end chapter */
+.logoe{
+
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.logoe .container{
+
+  background: url("/صور\ كتب/1675106253674.jpg");
+}
+.logoe .titles{
+
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.logoe .titles h2{
+  text-align: center; 
+   padding: 30px 0; 
+  /* margin: -10px 264px; */
+  border: 1px solid black;
+  width: 243px;
+  margin: auto;
+
+} 
+.logoe .totl {
+text-align: center;
+
+
+}
+.logoe label{
+width: 50%;
+height: 50px;
+  font-size: 30px;
+  background-color: goldenrod;
+
+  margin: 20px;
+  display: block;
+  margin:20px auto;
+
+}
+.logoe input{
+  width: 50%;
+  height: 40PX;
+}
+.logoe  button{
+margin: 20px 0;
+  width: 50%;
+  height: 50px;
+  
+padding-bottom: 5px;
+  align-items: center;
+  font-size: 30px;
+  background-color: green;
+  color: wheat;
+}
+.logoe P {
+font-size: 40px;
+color: rgb(13, 9, 2);
+background-color: coral; 
+border-radius: 30%;
+border:3PX solid white ;
+padding: 20px;
+}
